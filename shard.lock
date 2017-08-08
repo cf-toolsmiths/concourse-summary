@@ -2,11 +2,11 @@ version: 1.0
 shards:
   kemal:
     github: sdogruyol/kemal
-    commit: 0b4856b7417592743a27fc3e30867fd141395bf6
+    commit: fc4c97aafd9aa8aa0fe2f112dd8af9f47777b1c9
 
   kilt:
     github: jeromegn/kilt
-    version: 0.3.3
+    version: 0.4.0
 
   radix:
     github: luislavena/radix
