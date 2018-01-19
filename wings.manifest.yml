@@ -1,0 +1,10 @@
+---
+applications:
+  - name: concourse-summary-wings
+    memory: 256M
+    buildpack: https://github.com/crystal-lang/heroku-buildpack-crystal.git
+    # buildpack: https://github.com/dgodd/crystal-buildpack.git
+    env:
+      HOSTS: wings.concourse.ci toolsmiths.ci.cf-app.com
+      CS_GROUPS: '{"Toolsmiths":{"wings.concourse.ci":{"billing":null,"billing-test":null,"ci":null,"cron:deploy-PCF":null,"deploy":null,"gitbot-auto-merge":null,"maintenance":null,"monitors:externally-hosted-services":null,"monitors:internally-hosted-services":null,"monitors:infrastructure":null,"monitors:vsphere":null,"network:check":null,"reporting":null},"toolsmiths.ci.cf-app.com":null}}'
+      REFRESH_INTERVAL: 60
